@@ -30,9 +30,8 @@ class Bienvenida : AppCompatActivity() {
 
     override fun onResume() {
         Log.i("actividad", "resuman")
-        val binding = ActivityBienvenidaBinding.inflate(layoutInflater)
-        setContentView(binding.root)
         Toast.makeText(applicationContext, "Bienvenido de vuelta", Toast.LENGTH_SHORT).show()
         super.onResume()
     }
+
 }
