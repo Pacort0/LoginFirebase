@@ -28,7 +28,6 @@ class Bienvenida : AppCompatActivity() {
         val binding = ActivityBienvenidaBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.textoBienvenida.text = "¡Bienvenido $usuario!"
-
         Toast.makeText(applicationContext, "Bienvenido de vuelta, $usuario", Toast.LENGTH_SHORT)
             .show()
         super.onResume()
