@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAcceder"
+        android:layout_width="140dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/btnAcceder"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campoContrasena" />
+
+    <EditText
+        android:id="@+id/campoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Usuario"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/campoContrasena"
+        app:layout_constraintEnd_toEndOf="@+id/campoContrasena"
+        app:layout_constraintLeft_toRightOf="@id/usuario"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagenEmpresa" />
+
+    <EditText
+        android:id="@+id/campoContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Contraseña"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/btnAcceder"
+        app:layout_constraintLeft_toRightOf="@id/contrasena"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/campoUsuario" />
+
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6sp"
+        android:layout_marginBottom="18dp"
+        android:text="@string/usuario"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/contrasena"
+        app:layout_constraintEnd_toStartOf="@+id/campoContrasena"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/contrasena"
+        app:layout_constraintTop_toBottomOf="@id/imagenEmpresa"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/contrasena"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="6dp"
+        android:text="@string/contrasena"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnAcceder"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/campoContrasena"
+        app:layout_constraintTop_toBottomOf="@id/usuario" />
+
+    <ImageView
+        android:id="@+id/imagenEmpresa"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/fotocompany_login"
+        app:layout_constraintBottom_toTopOf="@id/campoUsuario"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Realizado por Francisco Rodríguez Tejada"
+        android:textColor="@color/colorRealizado"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceder" />
+</androidx.constraintlayout.widget.ConstraintLayout>
