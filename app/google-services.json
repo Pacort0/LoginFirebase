@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1096984149869",
+    "project_id": "login-con-firebase-6ae99",
+    "storage_bucket": "login-con-firebase-6ae99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096984149869:android:fd4c09c09deebb8b26a464",
+        "android_client_info": {
+          "package_name": "com.example.miprimeraaplicacion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_lhF7ChZV9tgJufXRn1VYm1p-XpnBpvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
